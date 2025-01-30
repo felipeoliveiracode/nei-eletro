@@ -1131,12 +1131,6 @@
             border-width: 0 0 2px;
         }
 
-        .block>.title strong,
-        .block .block-title strong {
-            font-weight: 700;
-            color: #
-        }
-
         .block .block-content {
             display: flow-root
         }
@@ -6618,18 +6612,12 @@
             display: none
         }
 
-        .cart-container .cart-summary {
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem
-        }
 
         @media (min-width:768px) {
             .cart-container .cart-summary {
                 position: sticky;
                 top: 1rem;
-                width: var(--sidebar-width)
+                width: 100%;
             }
         }
 
@@ -6697,7 +6685,8 @@
 
         .cart.table-wrapper .product-item-photo {
             float: left;
-            max-width: 40%
+            max-width: 40%;
+            margin-right: 15px;
         }
 
         .cart.table-wrapper .product-item-details {
@@ -7424,7 +7413,7 @@
         <main id="maincontent" class="page-main">
             <div id="contentarea"></div>
             <div class="page-title-wrapper">
-                <h1 class="page-title"><span class="base" data-ui-id="page-title-wrapper">Shopping Cart</span></h1>
+                <h1 class="page-title"><span class="base" data-ui-id="page-title-wrapper">Meu carrinho</span></h1>
             </div>
             <div class="page messages">
                 <div data-placeholder="messages"></div>
@@ -7454,7 +7443,7 @@
                             <div class="block discount" id="block-discount"
                                 data-mage-init='{"collapsible":{"active": false, "openedState": "active", "saveState": false}}'>
                                 <div class="title" data-role="title"><strong id="block-discount-heading" role="heading"
-                                        aria-level="2">Apply Discount Code</strong></div>
+                                        aria-level="2">Cupom de desconto</strong></div>
                                 <div class="content" data-role="content" aria-labelledby="block-discount-heading">
                                     <form id="discount-coupon-form"
                                         action="https://www.neieletro.net/checkout/cart/couponPost/" method="post"
@@ -7469,7 +7458,7 @@
                                             </div>
                                             <div class="actions-toolbar">
                                                 <div class="primary"><button class="action apply primary" type="button"
-                                                        value="Apply Discount"><span>Apply Discount</span></button>
+                                                        value="Apply Discount"><span>Aplicar desconto</span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -7479,7 +7468,7 @@
                             <div id="block-shipping" class="block shipping"
                                 data-mage-init='{"collapsible":{"openedState": "active", "saveState": true}}'>
                                 <div class="title" data-role="title"><strong id="block-shipping-heading" role="heading"
-                                        aria-level="2">Estimate Shipping and Tax</strong></div>
+                                        aria-level="2">Calcular prazo de entrega</strong></div>
                                 <div id="block-summary" class="content" data-role="content"
                                     aria-labelledby="block-shipping-heading">
                                     <form method="post" id="shipping-zip-form">
@@ -7566,7 +7555,7 @@
                                 <li class="item"> <button type="button" data-role="proceed-to-checkout"
                                         title="Proceed to Checkout"
                                         data-mage-init='{ "Magento_Checkout/js/proceed-to-checkout":{ "checkoutUrl":"https\u003A\u002F\u002Fwww.neieletro.net\u002Fcheckout\u002F" } }'
-                                        class="action primary checkout"><span>Proceed to Checkout</span></button> </li>
+                                        class="action primary checkout"><span>Finalizar compra</span></button> </li>
                                 <li class="item"> <a class="action multicheckout"
                                         href="https://www.neieletro.net/multishipping/checkout/"><span>Check Out with
                                             Multiple Addresses</span></a></li>
@@ -7583,9 +7572,9 @@
                                     <thead>
                                         <tr>
                                             <th class="col item" scope="col"><span>Item</span></th>
-                                            <th class="col price" scope="col"><span>Price</span></th>
-                                            <th class="col qty" scope="col"><span>Qty</span></th>
-                                            <th class="col subtotal" scope="col"><span>Subtotal</span></th>
+                                            <th class="col price" scope="col"><span>Preço Unitário</span></th>
+                                            <th class="col qty" scope="col"><span>Quant</span></th>
+                                            <th class="col subtotal" scope="col"><span>Preço total</span></th>
                                         </tr>
                                     </thead>
                                     <tbody class="cart item">
@@ -7758,8 +7747,7 @@
                             <div class="cart main actions"> <a class="action continue" href="https://www.neieletro.net/"
                                     title="Continue Shopping"><span>Continue Shopping</span></a> <button type="submit"
                                     name="update_cart_action" data-cart-item-update="" value="update_qty"
-                                    title="Update Shopping Cart" class="action update"><span>Update Shopping
-                                        Cart</span></button> <input type="hidden" value=""
+                                    title="Update Shopping Cart" class="action update"><span>Continuar comprando</span></button> <input type="hidden" value=""
                                     id="update_cart_action_container" data-cart-item-update=""></div>
                         </form>
                         <div id="gift-options-cart" data-bind="scope:'giftOptionsCart'">
