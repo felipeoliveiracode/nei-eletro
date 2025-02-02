@@ -261,30 +261,8 @@ button.action.submit.primary:hover {
     background-color: var(--gray-light);
 }
 
-strong#block-discount-heading,
-{
-color: red;
-}
-
 main#maincontent {
     margin-top: 20px;
-}
-
-.cart-container {
-    flex-direction: column;
-}
-
-form#form-validate {
-    width: 100%;
-}
-
-.cart-summary {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100%;
 }
 
 button.action.update {
@@ -311,4 +289,12 @@ button.action.primary.checkout:hover {
 
 span.product-image-container {
     width: 100px;
+}
+
+div#block-shipping {
+    width: 350px;
+}
+
+div#cart-totals {
+    width: 250px;
 }
